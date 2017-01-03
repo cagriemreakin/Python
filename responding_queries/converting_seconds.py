@@ -13,7 +13,7 @@
 def convert_seconds(time):
     hours = int(time / 3600)
     minutes = int((time % 3600) / 60)
-    seconds = t % 3600 % 60
+    seconds = time % 3600 % 60
     return '%i hour%s, %i minute%s, %s second%s' % (hours, 's' if hours != 1 else '', 
                                                     minutes, 's' if minutes != 1 else '',
                                                     seconds, 's' if seconds != 1 else '')
